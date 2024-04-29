@@ -2,6 +2,8 @@ import React from "react";
 import resturent1 from "../img/MaskGroup1.png";
 import resturent2 from "../img/resturent2.png";
 import star from "../img/StarRest.svg";
+import vector from "../img/Vector.svg";
+import vector2 from "../img/Vector2.svg";
 
 export default function TopRestaurants() {
     return (
@@ -48,6 +50,11 @@ export default function TopRestaurants() {
                             </div> 
                         </div>      
                     </div>
+                </div>
+                <div className="viewAll">
+                    <a href="#" className="viewAllA">View All</a>
+                    <img src={vector} className="vector"></img>
+                    <img src={vector2} className="vector2"></img>
                 </div>
             </div>
         </section>
