@@ -403,12 +403,24 @@ h2 span {
   background-color: var(--color-violet);
   border-radius: 15px;
   margin: 63px;
+  transition: 0.3s;
+ }
+
+ .phoneButton:hover {
+  color: var(--color-violet);
+  background-color: var(--color-light);
+  border: 1px solid var(--color-violet);
+ }
+
+ .phoneButton:hover .arrowDow {
+  filter: invert(45%) sepia(8%) saturate(4044%) hue-rotate(208deg) brightness(86%) contrast(84%);
  }
 
  .arrowDow {
   display: inline;
   width: 20px;
   margin-bottom: -4px;
+  transition: 0.3s;
  }
 
  .topRestaurantsContainer {
@@ -560,6 +572,10 @@ h2 span {
   text-align: center;
 }
 
+.controlPurchasesContainer img {
+  margin: 0px;
+  padding: 0px;
+}
 .topRestaurantsDiv:hover {
   transform: scale(1.1);
  }
@@ -583,6 +599,151 @@ h2 span {
   text-align: end;
   margin-bottom: -25px;
  }
+
+
+ .controlPurchasesContainer {
+  display: flex;
+  flex-direction: row;
+ }
+
+ .controlPurchasesContainerLeft img {
+  width: 77px;
+  height: 80px;
+  margin-right: 19px;
+ }
+
+ .controlPurchasesContainerLeft li {
+  display: flex;
+  width: 345px;
+  padding: 4px 17px;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0px 20px 30px rgba(229, 229, 229, 0.8);
+  border: 1px solid rgba(229, 229, 229, 0.3);
+  margin-bottom: 15px;
+ }
+
+ .controlPurchasesTime {
+  margin-bottom: 10px;
+  align-self: flex-end;
+  color: rgba(172, 173, 185, 1);
+  font-size: 12px;
+ }
+
+ .controlPurchasesInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .controlPurchasesName {
+  color: rgba(50, 49, 66, 1);
+ }
+
+ .controlPurchasesName span{
+  color: #F1534E;
+ }
+
+ .controlPurchasesInfo h3{
+  margin: 0px;
+ }
+
+ .controlPurchasesInfo p {
+  margin-top: 5px;
+ }
+
+ .controlPurchasesContainerRight {
+  display: flex;
+  padding: 20px 45px 40px 45px;
+  border-radius: 25px;
+  width: 534px;
+  text-align: center;
+  flex-direction: column;
+  border: 1px solid rgba(229, 229, 229, 0.8);
+  box-shadow: 0px 20px 30px rgba(229, 229, 229, 0.8);
+  margin-left: 280px;
+}
+
+.controlPurchasesContainerRight h3 {
+  margin-right: 130px;
+  font-size: 29px;
+}
+
+.controlPurchasesContainerRight select {
+  height: 53px;
+}
+
+.timeSelect{
+  text-align: center;
+  width: 175px;
+  border-radius: 12px;
+  border: 0;
+  background-color: rgba(229, 229, 229, 0.3);
+  font-size: 18px;
+}
+
+.controlPurchasesContainerRightHeader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.expense{
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  border: 1px solid rgba(229, 229, 229, 0.8);
+  padding: 15px;
+}
+
+.expenseInfo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -10px;
+}
+
+.expenseInfo span {
+  color: #A0AEC0;
+}
+
+.price {
+  color: #1A202C;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.expenseInfoDiv {
+  padding-right: 100px;
+  text-align: start;
+}
+
+
+.vocherUsage span {
+  color: #A0AEC0;
+}
+
+.vocherUsage{
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  border: 1px solid rgba(229, 229, 229, 0.8);
+  padding: 15px;
+}
+
+.vocherUsageInfo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -10px;
+}
+
+.vocherUsageInfoDiv {
+  padding-right: 125px;
+  text-align: start;
+}
 
 
 
@@ -646,14 +807,6 @@ h2 span {
   margin-top: 150px;
 }
 
-input {
-  width: 382px;
-  height: 30px;
-  border-radius: 3px;
-  border: 2px solid var(--color-violet);
-  margin-left: 400px;
-}
-
 .formDiv button {
   border: 2px solid var(--color-violet);
   margin-left: 405px;
@@ -667,6 +820,8 @@ input {
   background-color: var(--color-violet);
   color: var(--color-light);
 }
+
+
 
 
 

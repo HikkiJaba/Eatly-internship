@@ -5,6 +5,7 @@ import Features from './component/Features.js';
 import Mobile from './component/Mobile.js';
 import TopRestaurants from './component/TopRestaurants.js';
 import TopDishes from './component/TopDishes.js';
+import ControlPurchases from './component/ControlPurchases.js';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Mobile />
       <TopRestaurants />
       <TopDishes />
+      <ControlPurchases />
     </div>
   );
 }
